@@ -8,8 +8,8 @@ import {
 
 describe('Locations Data', () => {
   describe('LOCATIONS array integrity', () => {
-    it('contains exactly 10 locations', () => {
-      expect(LOCATIONS).toHaveLength(10);
+    it('contains exactly 15 locations', () => {
+      expect(LOCATIONS).toHaveLength(15);
     });
 
     it('every location has a unique slug', () => {
@@ -55,8 +55,8 @@ describe('Locations Data', () => {
   });
 
   describe('INDEXED_LOCATIONS', () => {
-    it('contains all 10 locations', () => {
-      expect(INDEXED_LOCATIONS).toHaveLength(10);
+    it('contains all 15 locations', () => {
+      expect(INDEXED_LOCATIONS).toHaveLength(15);
     });
 
     it('includes only locations without noindex', () => {
