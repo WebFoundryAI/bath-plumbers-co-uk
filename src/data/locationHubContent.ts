@@ -154,7 +154,7 @@ The combination of topographic challenges, varied geology, and aging infrastruct
     caseStudy: `Recent emergency call-out in Combe Down: A homeowner near Weston Hall garden experienced toilet blockage just before hosting a dinner party. Initial rodding provided temporary relief, but our CCTV revealed significant tree root intrusion from a mature oak in the rear garden. The roots had occupied about 50% of the clay pipe diameter over the main 30-meter run. We performed high-pressure jetting to clear roots and advised on pipe relining. The homeowner opted for sectional relining on the affected 10-meter span. Result: restored function with long-term protection. The blocked Combe Down properties are frequently affected by tree root issues—early intervention prevents emergencies.`
   },
 
-  bradford-on-avon: {
+  "bradford-on-avon": {
     landmarks: [
       "Bradford on Avon Market",
       "Dunham Massey",
@@ -234,7 +234,7 @@ Understanding Radstock's unique drainage context—industrial heritage, variable
     caseStudy: `Emergency call-out to a mill conversion in Farnworth: A newly-converted mill apartment experienced raw sewage in the basement during heavy rain. Our survey revealed the original multi-building industrial drainage configuration still partially in place, with redundant routes creating sediment traps. Recent conversion work had partially blocked one historic route, concentrating flow through aging pipes. We carefully mapped the system, isolated redundant routes, and cleared blockages. The building committee agreed to fund main line relining for the multi-property structure. Result: resolved raw sewage issue and established maintenance schedule for shared system. Tip: Mill conversion properties always have complex industrial heritage—professional mapping essential.`
   },
 
-  midsomer-norton: {
+  "midsomer-norton": {
     landmarks: [
       "Midsomer Norton Town Centre",
       "Saddleworth Moor",

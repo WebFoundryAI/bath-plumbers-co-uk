@@ -21,7 +21,7 @@ function createEvent(
 const VALID_PAYLOAD = {
   name: 'Jane Smith',
   phone: '07700900000',
-  postcode: 'm2 3wq',
+  postcode: 'ba1 1aa',
   service: 'Blocked Drains',
 };
 
@@ -159,7 +159,7 @@ describe('Netlify Lead API', () => {
       await handler(createEvent({
         name: '  Jane  ',
         phone: ' 07700 ',
-        postcode: '  m2 3wq  ',
+        postcode: '  ba1 1aa  ',
         service: ' Drains ',
       }));
       const fetchCall = vi.mocked(fetch).mock.calls[0];

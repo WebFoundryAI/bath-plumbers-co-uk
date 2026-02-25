@@ -41,7 +41,7 @@ function createContext(
 const VALID_PAYLOAD = {
   name: 'John Doe',
   phone: '07700900000',
-  postcode: 'm2 3wq',
+  postcode: 'ba1 1aa',
   service: 'Blocked Drains',
 };
 
@@ -215,7 +215,7 @@ describe('Cloudflare Lead API (D1)', () => {
     it('trims whitespace and uppercases postcode', async () => {
       const mockDB = createMockDB();
       const ctx = createContext(
-        { name: '  John Doe  ', phone: ' 07700900000 ', postcode: '  m2 3wq  ', service: ' Blocked Drains ' },
+        { name: '  John Doe  ', phone: ' 07700900000 ', postcode: '  ba1 1aa  ', service: ' Blocked Drains ' },
         {},
         { DB: mockDB }
       );

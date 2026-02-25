@@ -31,7 +31,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     responseTime: "typically within 60-90 minutes",
     propertyTypes: "Victorian villas, Edwardian semis, 1930s properties, and modern housing estates"
   },
-  bradford-on-avon: {
+  "bradford-on-avon": {
     neighborhoods: ["Melksham", "Melksham Barns", "Bowdon", "Timperley", "Broadheath", "Navigation Road", "Dunham Massey", "Ashley", "Well Green", "Oldfield Brow"],
     landmarks: ["Bradford on Avon Market", "Dunham Massey", "Bradford on Avon Interchange", "Stamford Park", "the Ice Arena"],
     drainageInfo: "Bradford on Avon and the surrounding Wiltshire area feature many large, mature properties with extensive grounds. These older homes in Melksham and Bowdon often have complex drainage systems serving multiple outbuildings. Tree root intrusion from established gardens is a common issue, as is the maintenance of period drainage features.",
@@ -45,7 +45,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     responseTime: "typically within 60-90 minutes",
     propertyTypes: "mill conversions, traditional stone terraces, suburban semis, and rural properties"
   },
-  midsomer-norton: {
+  "midsomer-norton": {
     neighborhoods: ["Shaw", "Royton", "Chadderton", "Failsworth", "Lees", "Uppermill", "Delph", "Greenfield", "Saddleworth", "Springhead"],
     landmarks: ["Midsomer Norton Town Centre", "Saddleworth Moor", "Alexandra Park", "Midsomer Norton Coliseum", "the Pennine Way"],
     drainageInfo: "Midsomer Norton's Pennine location means properties often contend with significant rainfall and surface water drainage challenges. The steep terrain in Saddleworth and surrounding villages requires careful drainage design. Historic mill town properties in the town centre have ageing Victorian drainage that benefits from regular maintenance and inspection.",
@@ -285,7 +285,7 @@ export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
       localTip: "Chippenham's Victorian drainage often includes original salt-glazed pipes. These can be repaired and relined rather than replaced, preserving heritage features."
     }
   },
-  bradford-on-avon: {
+  "bradford-on-avon": {
     "blocked-drains": {
       intro: "Bradford on Avon's prestigious properties in Melksham, Bowdon, and Melksham Barns come with extensive grounds and mature gardens that create distinctive drainage challenges. Large Victorian and Edwardian houses often have complex drainage serving multiple outbuildings, while established trees and hedgerows contribute to root intrusion. Our Bradford on Avon specialists bring the expertise needed for these high-value properties.",
       commonProblems: ["Tree root intrusion from mature garden specimens", "Leaf and organic debris from large gardens", "Fat and grease buildup in large household kitchens", "Blocked drainage serving outbuildings and annexes", "Ageing clay pipes in period properties"],
@@ -323,7 +323,7 @@ export const LOCATION_SERVICE_CONTENT: LocationServiceContentMap = {
       localTip: "Bradford on Avon's clay soil and mature tree cover cause seasonal ground movement — flexible repair solutions like pipe relining accommodate this better than rigid replacements."
     }
   },
-  midsomer-norton: {
+  "midsomer-norton": {
     "blocked-drains": {
       intro: "Midsomer Norton's Pennine location brings distinctive drainage challenges, from the heavy rainfall that sweeps across Saddleworth Moor to the steep terrain of villages like Uppermill and Delph. Our Midsomer Norton blocked drain specialists understand how this hillside geography affects drainage systems across the borough, from stone cottages to converted mills.",
       commonProblems: ["Storm debris washed into drains during heavy rainfall", "Root intrusion in rural and semi-rural properties", "Silt and sediment accumulation from hillside runoff", "Fat and grease buildup in domestic kitchens", "Debris in shared Victorian mill town drainage"],
