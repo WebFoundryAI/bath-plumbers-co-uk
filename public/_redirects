@@ -1,0 +1,8 @@
+# Redirects for Cloudflare Pages/Workers
+# Redirect www to non-www (canonical domain)
+# Note: HTTP to HTTPS is handled automatically by Cloudflare's SSL/TLS settings
+
+# www to non-www redirect (301 permanent)
+https://www.bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
+http://www.bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
+http://bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
