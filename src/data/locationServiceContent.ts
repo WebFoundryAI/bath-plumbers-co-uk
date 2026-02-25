@@ -535,7 +535,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "Local engineers who respond to {location} properties {responseTime}",
     "No call-out fee — you only pay for completed work",
     "Equipment suited to {propertyTypes}",
-    "Familiarity with United Utilities infrastructure and local council requirements"
+    "Familiarity with Wessex Water infrastructure and local council requirements"
   ],
   "drain-unblocking": [
     "Rapid response across {location} — engineers arrive {responseTime}",
@@ -547,7 +547,7 @@ export const SERVICE_WHY_CHOOSE_US: Record<string, string[]> = {
     "HD camera equipment producing detailed, professional-grade reports",
     "Engineers who understand drainage typical of {propertyTypes}",
     "Response to {location} bookings {responseTime}",
-    "Reports accepted by solicitors, insurers, and United Utilities"
+    "Reports accepted by solicitors, insurers, and Wessex Water"
   ],
   "drain-jetting": [
     "Variable-pressure jetting units safe for all pipe materials",

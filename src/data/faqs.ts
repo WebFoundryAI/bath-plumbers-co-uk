@@ -122,7 +122,7 @@ export function getLocationFAQs(locationName: string): FAQ[] {
 export const PAGE_FAQS: FAQ[] = [
   {
     question: "How quickly can you respond to an emergency callout?",
-    answer: 'We aim to respond to <a href="/services/emergency-drain-services/" class="text-primary hover:underline">emergency drainage callouts</a> within 60-90 minutes across <a href="/locations/bath/" class="text-primary hover:underline">Bath</a> and Somerset and Wiltshire. Our team operates around the clock, so help is available whenever you need it, day or night.'
+    answer: 'We aim to respond to <a href="/services/emergency-drain-services/" class="text-primary hover:underline">emergency drainage callouts</a> within 60-90 minutes across <a href="/locations/bath/" class="text-primary hover:underline">Bath</a> and all areas within 25 miles. Our team operates around the clock, so help is available whenever you need it, day or night.'
   },
   {
     question: "Do you charge a call-out fee?",
@@ -130,7 +130,7 @@ export const PAGE_FAQS: FAQ[] = [
   },
   {
     question: "What locations do you cover?",
-    answer: 'We provide drainage services throughout <a href="/locations/bath/" class="text-primary hover:underline">Bath</a> and Somerset and Wiltshire, including <a href="/locations/bristol/" class="text-primary hover:underline">Bristol</a>, <a href="/locations/keynsham/" class="text-primary hover:underline">Keynsham</a>, <a href="/locations/bradford-on-avon/" class="text-primary hover:underline">Bradford on Avon</a>, Radstock, Midsomer Norton, Frome, Corsham, Chippenham, and Trowbridge. See <a href="/locations/" class="text-primary hover:underline">all locations we cover</a>.'
+    answer: 'We provide drainage services within 25 miles of <a href="/locations/bath/" class="text-primary hover:underline">Bath</a>, including <a href="/locations/bristol/" class="text-primary hover:underline">Bristol</a>, <a href="/locations/keynsham/" class="text-primary hover:underline">Keynsham</a>, <a href="/locations/bradford-on-avon/" class="text-primary hover:underline">Bradford on Avon</a>, Radstock, Midsomer Norton, Frome, Corsham, Chippenham, Trowbridge, Wells, Shepton Mallet, Melksham, Warminster, and Westbury. See <a href="/locations/" class="text-primary hover:underline">all locations we cover</a>.'
   },
   {
     question: "What payment methods do you accept?",
