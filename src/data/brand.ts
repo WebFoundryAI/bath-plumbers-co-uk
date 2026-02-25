@@ -2,7 +2,7 @@ export const BRAND = {
   brandName: "Bath Plumbers",
   domain: "bathplumbers.co.uk",
   primaryLocation: "Bath",
-  serviceAreaLabel: "Bath and surrounding Somerset & Wiltshire areas",
+  serviceAreaLabel: "Bath and surrounding areas within 25 miles",
   phone: "01225000000",
   phoneFormatted: "01225 000000",
   email: "contactus@bathplumbers.co.uk",
