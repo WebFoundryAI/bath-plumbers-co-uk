@@ -7,8 +7,8 @@ export interface Location {
   noindex?: boolean;
 }
 
-/** Service area extends 25 miles from the centre of Bath */
-export const SERVICE_AREA_RADIUS_MILES = 25;
+/** Service area extends 15 miles from the centre of Bath */
+export const SERVICE_AREA_RADIUS_MILES = 15;
 
 export const PRIMARY_LOCATION: Location = {
   slug: "bath",
@@ -84,32 +84,11 @@ export const LOCATIONS: Location[] = [
     longitude: -2.1863,
   },
   {
-    slug: "wells",
-    name: "Wells",
-    countyOrRegion: "Somerset",
-    latitude: 51.2090,
-    longitude: -2.6467,
-  },
-  {
-    slug: "shepton-mallet",
-    name: "Shepton Mallet",
-    countyOrRegion: "Somerset",
-    latitude: 51.1905,
-    longitude: -2.5457,
-  },
-  {
     slug: "melksham",
     name: "Melksham",
     countyOrRegion: "Wiltshire",
     latitude: 51.3719,
     longitude: -2.1378,
-  },
-  {
-    slug: "warminster",
-    name: "Warminster",
-    countyOrRegion: "Wiltshire",
-    latitude: 51.2045,
-    longitude: -2.1772,
   },
   {
     slug: "westbury",
