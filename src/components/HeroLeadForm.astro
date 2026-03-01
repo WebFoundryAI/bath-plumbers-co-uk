@@ -145,11 +145,16 @@ const {
         if (summary && errorList) {
           if (errors.length) {
             summary.classList.remove('hidden');
-            errorList.innerHTML = errors.map((e) => `<li>${e.message}</li>`).join('');
+            errorList.textContent = '';
+            errors.forEach(function (e) {
+              var li = document.createElement('li');
+              li.textContent = e.message;
+              errorList.appendChild(li);
+            });
             summary.focus();
           } else {
             summary.classList.add('hidden');
-            errorList.innerHTML = '';
+            errorList.textContent = '';
           }
         }
 
@@ -252,7 +257,10 @@ const {
         } catch (error) {
           if (summary && errorList) {
             summary.classList.remove('hidden');
-            errorList.innerHTML = `<li>${error instanceof Error ? error.message : 'Unable to submit. Please call us now.'}</li>`;
+            errorList.textContent = '';
+            var li = document.createElement('li');
+            li.textContent = error instanceof Error ? error.message : 'Unable to submit your request. Please try again.';
+            errorList.appendChild(li);
             summary.focus();
           }
           if (submit instanceof HTMLButtonElement) {

@@ -3,6 +3,6 @@
 # Note: HTTP to HTTPS is handled automatically by Cloudflare's SSL/TLS settings
 
 # www to non-www redirect (301 permanent)
-https://www.bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
-http://www.bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
-http://bathplumbers.co.uk/* https://bathplumbers.co.uk/:splat 301
+https://www.bath-plumbers.co.uk/* https://bath-plumbers.co.uk/:splat 301
+http://www.bath-plumbers.co.uk/* https://bath-plumbers.co.uk/:splat 301
+http://bath-plumbers.co.uk/* https://bath-plumbers.co.uk/:splat 301
