@@ -4,6 +4,7 @@ import { BRAND } from '../data/brand';
 import { SERVICES } from '../data/services';
 import { LOCATIONS } from '../data/locations';
 import { serializeSchema } from '../utils/schema';
+import EmailLink from '../components/EmailLink.astro';
 
 interface Props {
   title?: string;
@@ -145,7 +146,7 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
           <p class="font-semibold mb-2">{BRAND.brandName}</p>
           <p class="text-sm text-slate-300">{BRAND.addressLine1}, {BRAND.addressLine2}, {BRAND.postcode}</p>
           <p class="text-sm mt-2"><a href={`tel:${BRAND.phone}`} class="underline">{BRAND.phoneFormatted}</a></p>
-          <p class="text-sm"><a href={`mailto:${BRAND.email}`} class="underline">{BRAND.email}</a></p>
+          <p class="text-sm"><EmailLink class="underline" /></p>
           <p class="text-sm mt-2">24/7 emergency response · Mon–Sun</p>
         </div>
 

@@ -1,0 +1,36 @@
+---
+/**
+ * EmailLink — renders an email link that bypasses Cloudflare Email Obfuscation.
+ *
+ * Cloudflare's Email Obfuscation rewrites mailto: links and visible email
+ * addresses in the HTML response, replacing them with /cdn-cgi/l/email-protection
+ * URLs. Crawlers see these as broken 404 links.
+ *
+ * This component splits the email into data attributes and assembles it
+ * client-side via JS, so Cloudflare cannot detect the pattern.
+ */
+import { BRAND } from '../data/brand';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+const [emailUser, emailDomain] = BRAND.email.split('@');
+---
+
+<a class:list={["email-link", className]} data-u={emailUser} data-d={emailDomain}>
+  <span class="email-fallback">{emailUser}<!-- -->{"[at]"}<!-- -->{emailDomain}</span>
+</a>
+
+<script>
+  document.querySelectorAll('a.email-link').forEach((el) => {
+    const u = el.getAttribute('data-u');
+    const d = el.getAttribute('data-d');
+    if (u && d) {
+      const addr = u + '@' + d;
+      el.setAttribute('href', 'mailto:' + addr);
+      el.textContent = addr;
+    }
+  });
+</script>

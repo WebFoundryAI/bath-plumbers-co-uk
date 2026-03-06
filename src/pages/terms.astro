@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EmailLink from '../components/EmailLink.astro';
 import { BRAND } from '../data/brand';
 import { getBreadcrumbSchema } from '../utils/schema';
 
@@ -80,7 +81,7 @@ const breadcrumbSchema = getBreadcrumbSchema([
         <h2>9. Complaints</h2>
         <p>
           We take complaints seriously. Please contact us at
-          <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a> or call
+          <EmailLink /> or call
           <a href={`tel:${BRAND.phone}`}>{BRAND.phoneFormatted}</a> with any concerns.
         </p>
 

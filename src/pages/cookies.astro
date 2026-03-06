@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EmailLink from '../components/EmailLink.astro';
 import { BRAND } from '../data/brand';
 import { getBreadcrumbSchema } from '../utils/schema';
 
@@ -81,7 +82,7 @@ const breadcrumbSchema = getBreadcrumbSchema([
         <h2>Contact Us</h2>
         <p>
           For questions about our cookie policy, contact us at:
-          <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>
+          <EmailLink />
         </p>
       </div>
     </div>

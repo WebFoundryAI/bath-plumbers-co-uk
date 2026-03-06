@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
+import EmailLink from '../components/EmailLink.astro';
 import { BRAND } from '../data/brand';
 import { getBaseBusinessSchema, getBreadcrumbSchema, getFAQSchema } from '../utils/schema';
 import { CONTACT_CONTENT } from '../data/staticContent';
@@ -26,7 +27,7 @@ const pageSchema = [
         <p class="text-muted-foreground mb-6">Call us for immediate support or send your details and we'll call back quickly.</p>
 
         <p><strong>Phone:</strong> <a href={`tel:${BRAND.phone}`}>{BRAND.phoneFormatted}</a></p>
-        <p><strong>Email:</strong> <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></p>
+        <p><strong>Email:</strong> <EmailLink /></p>
         <p><strong>Address:</strong> {BRAND.addressLine1}, {BRAND.addressLine2}, {BRAND.postcode}</p>
         <p><strong>Hours:</strong> 24/7 emergency response</p>
       </div>
