@@ -14,12 +14,13 @@ interface Props {
   schema?: object | object[];
   noindex?: boolean;
   keywords?: string;
+  ogType?: string;
 }
 
 const defaultTitle = `${BRAND.brandName} | 24/7 Drainage Services`;
 const defaultDescription = `Professional drain unblocking, CCTV surveys, and emergency drainage services across ${BRAND.serviceAreaLabel}. No call-out fee, fixed pricing. Call ${BRAND.phoneFormatted}.`;
 
-const { title = defaultTitle, description = defaultDescription, canonical, image, schema, noindex = false, keywords } = Astro.props;
+const { title = defaultTitle, description = defaultDescription, canonical, image, schema, noindex = false, keywords, ogType = 'website' } = Astro.props;
 const siteUrl = `https://${BRAND.domain}`;
 const canonicalUrl = canonical ? `${siteUrl}${canonical}` : `${siteUrl}${Astro.url.pathname}`;
 const defaultOgImage = `${siteUrl}/images/og-default.jpg`;
@@ -36,10 +37,10 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
     <title>{title}</title>
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
-    {noindex && <meta name="robots" content="noindex, follow" />}
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow" />}
     <link rel="canonical" href={canonicalUrl} />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -58,7 +59,9 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
 
     {schema && <script type="application/ld+json" set:html={serializeSchema(schema)} />}
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <!-- TODO: Add site-specific Google Search Console verification for bath-plumbers.co.uk -->
     <link rel="preload" as="image" href="/images/hero-bg-mobile.webp" type="image/webp" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="/images/hero-bg.webp" type="image/webp" media="(min-width: 768px)" />
@@ -150,16 +153,16 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
           <p class="text-sm mt-2">24/7 emergency response · Mon–Sun</p>
         </div>
 
-        <div>
+        <nav aria-label="Footer services">
           <p class="font-semibold mb-2">Services</p>
           <ul class="text-sm space-y-1">
             {SERVICES.slice(0, 6).map((service) => (
               <li><a href={`/services/${service.slug}/`} class="hover:underline">{service.name}</a></li>
             ))}
           </ul>
-        </div>
+        </nav>
 
-        <div>
+        <nav aria-label="Footer locations">
           <p class="font-semibold mb-2">Coverage & trust</p>
           <ul class="text-sm space-y-1">
             {LOCATIONS.map((location) => (
@@ -174,7 +177,7 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
           <p class="text-sm mt-4">
             <a href="/privacy/" class="underline">Privacy</a> · <a href="/terms/" class="underline">Terms</a> · <a href="/cookies/" class="underline">Cookies</a>
           </p>
-        </div>
+        </nav>
       </div>
     </footer>
 

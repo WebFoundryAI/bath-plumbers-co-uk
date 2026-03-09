@@ -4,16 +4,16 @@ import HeroWithLeadForm from '../components/HeroWithLeadForm.astro';
 import { BRAND } from '../data/brand';
 import { SERVICES } from '../data/services';
 import { LOCATIONS } from '../data/locations';
-import { getHomepageSchema } from '../utils/schema';
+import { getCompleteHomepageSchema, getFAQSchema } from '../utils/schema';
 import { HOMEPAGE_FAQS } from '../data/faqs';
 
 const title = `Blocked Drains Bath | 24/7 Emergency Unblocking`;
 const description = `Blocked drains in Bath fixed fast. Local engineers, fixed pricing, and 24/7 emergency drainage response. Call ${BRAND.phoneFormatted} or request a quote online.`;
 ---
 
-<BaseLayout title={title} description={description} canonical="/" schema={getHomepageSchema()}>
+<BaseLayout title={title} description={description} canonical="/" schema={[...getCompleteHomepageSchema(), getFAQSchema(HOMEPAGE_FAQS.slice(0, 6))]}>
   <HeroWithLeadForm
-    title="Bath Plumbers — your trusted local drainage experts"
+    title="Blocked Drains Bath — Fast, Local Drainage Experts"
     description="Get same-day drainage support from experienced local engineers. We clear blocked sinks, toilets, and outside drains with no hidden extras."
     formId="home-lead-form"
     source="homepage"
@@ -28,7 +28,7 @@ const description = `Blocked drains in Bath fixed fast. Local engineers, fixed p
             <span class="text-3xl mb-2 block" aria-hidden="true">{service.icon}</span>
             <h3 class="text-xl font-bold mb-2">{service.name}</h3>
             <p class="text-muted-foreground text-sm">{service.shortLabel}</p>
-            <a href={`/services/${service.slug}/`} class="btn-outline mt-4 no-underline">View service</a>
+            <a href={`/services/${service.slug}/`} class="btn-outline mt-4 no-underline">{service.name} details</a>
           </article>
         ))}
       </div>

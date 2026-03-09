@@ -73,9 +73,9 @@ function formatContent(content: string): string {
   title={post.metaTitle}
   description={post.metaDescription}
   canonical={`/blog/${post.slug}/`}
-  schema={[businessSchema, articleSchema]}
+  schema={[businessSchema, articleSchema, breadcrumbSchema]}
+  ogType="article"
 >
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <!-- Article Header -->
   <section class="hero-section">
