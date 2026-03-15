@@ -12,6 +12,7 @@ export const BRAND = {
   tagline: "Fast, Reliable Plumbing Solutions",
   emergencyAvailable: true,
   ga4Id: "G-SNN9NDGHTX",
+  gscVerification: "google961cee0b68e77cd7",
   socialProfiles: [
     "https://www.facebook.com/BathPlumbers",
     "https://twitter.com/BathPlumbers",
