@@ -11,6 +11,7 @@ export const BRAND = {
   postcode: "BA1 1AA",
   tagline: "Fast, Reliable Plumbing Solutions",
   emergencyAvailable: true,
+  ga4Id: "G-SNN9NDGHTX",
   socialProfiles: [
     "https://www.facebook.com/BathPlumbers",
     "https://twitter.com/BathPlumbers",
