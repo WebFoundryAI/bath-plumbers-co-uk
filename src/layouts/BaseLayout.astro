@@ -66,6 +66,7 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
     <link rel="preload" as="image" href="/images/hero-bg-mobile.webp" type="image/webp" media="(max-width: 767px)" />
     <link rel="preload" as="image" href="/images/hero-bg.webp" type="image/webp" media="(min-width: 768px)" />
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
     <script is:inline>
@@ -118,7 +119,7 @@ const ogImage = image ? `${siteUrl}${image}` : defaultOgImage;
 
       <div class="container-wide px-4 py-3 flex items-center justify-between gap-4">
         <a href="/" class="flex items-center no-underline">
-          <img src="/images/bath-plumbers-logo.png" alt={BRAND.brandName} class="h-20 md:h-[100px] w-auto" />
+          <img src="/images/bath-plumbers-logo.webp" alt={BRAND.brandName} class="h-20 md:h-[100px] w-auto" width="600" height="600" />
         </a>
 
         <nav class="hidden lg:flex items-center gap-6" aria-label="Main navigation">
