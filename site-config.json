@@ -1,0 +1,14 @@
+{
+  "site_name": "Bath Plumber",
+  "city": "Bath",
+  "region": "Somerset",
+  "country": "England",
+  "tier": 3,
+  "domain": "bath-plumbers.co.uk",
+  "layout_variant": "hero-cta",
+  "theme_variant": "trust-blue",
+  "status": "active",
+  "github_repo": "https://github.com/WebFoundryAI/bath-plumbers-co-uk.git",
+  "source_folder": "rank-to-rent-sites/bath-plumbers-co-uk",
+  "notes": "Tier 3 site. Migrated from existing rank-to-rent-sites folder."
+}
