@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import sitemap from '@astrojs/sitemap';
+// @astrojs/sitemap removed — replaced by custom split sitemaps
+// See src/pages/sitemap-index.xml.ts, sitemap-pages.xml.ts,
+// sitemap-services.xml.ts, sitemap-locations.xml.ts, sitemap-blog.xml.ts
 
 export default defineConfig({
   site: 'https://bath-plumbers.co.uk',
   integrations: [
-    sitemap(),
     tailwind(),
   ],
   output: 'static',

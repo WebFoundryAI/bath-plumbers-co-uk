@@ -11,7 +11,7 @@ Disallow: /api/
 Disallow: /_astro/
 
 # Sitemap
-Sitemap: https://bath-plumbers.co.uk/sitemap.xml
+Sitemap: https://bath-plumbers.co.uk/sitemap-index.xml
 
 # Host
 Host: https://bath-plumbers.co.uk
