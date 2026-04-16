@@ -5,6 +5,8 @@ export interface Location {
   latitude: number;
   longitude: number;
   noindex?: boolean;
+  description?: string;
+  responseTime?: string;
 }
 
 /** Service area extends 15 miles from the centre of Bath */
